@@ -21,3 +21,4 @@ function solve(word){
 }
 solve('hello');
 solve('bye')
+solve('beer');
