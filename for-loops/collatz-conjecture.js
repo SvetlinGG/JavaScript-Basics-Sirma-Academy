@@ -2,20 +2,19 @@ function solve(num){
 
     let arr = [];
 
-    for ( let i = num; i >= 1; i--){
-        
-        
-        if ( i % 2 == 0){
-            num[i] = num[i] / 2;
-            arr.push(num[i]);
+    while ( num !== 1 ){
+        arr.push(num);
+
+        if ( num % 2 == 0 ){
+            num = num /2;
         }else{
-            num[i] = (num[i] * 3) + 1;
-            arr.push(num[i]);
+            num = (num * 3) + 1;
         }
         
-        
     }
-    console.log(arr);
+    arr.push(num);
+    console.log(arr.join(' '));
     
 }
 solve(6)
+solve(15)
