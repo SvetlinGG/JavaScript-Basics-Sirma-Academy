@@ -1,27 +1,16 @@
 function solve(floor, rooms){
-
+    let floorName = '';
     
-    let currentRoom = 0
-    let floorName = ''
-    let result = ``;
+    for ( let i = floor; i >=1; i--){
 
-    while ( floor >= 1){
-        if (floor == floor){
-            floorName == 'L';
-        }
+        for (let j = 0; j <= rooms -1; j++){
 
-        for ( let i =0; i <= rooms-1; i ++){
-            currentRoom = i;
-            if (floor % 2 == 0){
-                floorName == 'O';
-            }else {
-                floorName == 'A';
+            if (i = floor){
+                floorName = 'L'
             }
+            console.log(`${i}${j}`);
             
         }
-        
-        
-
     }
     
 }
