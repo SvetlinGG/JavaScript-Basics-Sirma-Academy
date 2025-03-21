@@ -1,10 +1,10 @@
 function solve(n){
 
-    for ( let i=7; i<= n; i +=10){
+    for(let i = n; i <=1000; i+=10){
         console.log(i);
         
+
     }
 
-
 }
-solve(1000)
+solve(6)
