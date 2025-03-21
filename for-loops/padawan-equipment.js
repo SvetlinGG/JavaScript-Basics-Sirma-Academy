@@ -1,6 +1,10 @@
 function solve(money, studentsCount, priceLightsabers, priceRobes, priceBelts){
 
-    let totalMoney = priceLightsabers * Math.ceil(studentsCount * 1.1) + priceRobes * (studentsCount) + priceBelts *  studentsCount;
+    let totalMoney = priceLightsabers * Math.ceil(studentsCount * 1.1) + priceRobes * (studentsCount) + priceBelts *  studentsCount;;
+
+    if (studentsCount > 6){
+        totalMoney = priceLightsabers * Math.ceil(studentsCount * 1.1) + priceRobes * (studentsCount) + priceBelts *  (studentsCount - (studentsCount/6));
+    }
     
     if ( money >= totalMoney){
         console.log(`The money is enough - it would cost ${totalMoney.toFixed(2)}lv.`); 
@@ -10,7 +14,7 @@ function solve(money, studentsCount, priceLightsabers, priceRobes, priceBelts){
         
     }
     
-    console.log(Math.ceil(studentsCount * 1.1));
+    
     
     
 
