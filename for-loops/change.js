@@ -38,5 +38,3 @@ function solve(change){
 }
 solve(1.23);
 solve(2);
-solve(0.56);
-solve(2.73);
