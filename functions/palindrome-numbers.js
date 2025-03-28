@@ -1,21 +1,19 @@
-function palindrome(arr){
-    let result  = '';
+function isPalindrome(num){
 
+    let numStr = num.toString();
+     //numStr === numStr.split('').reverse().join('') 
 
-    for( var i = arr.length; i > 0; i-- )
-        {
-            if( arr[i] = arr.length -1 )
-            {
-                result = 'true';
-            }else{
-                result = 'false';
-            }
-        }
+    console.log(numStr);
     
-    console.log(result);
-    
-    
-    
-
 }
-palindrome([123,323,421,121])
+// function palindrome(arr){
+//     let result = [];
+//     for (let num of arr){
+//         result.push(isPalindrome(num))
+
+//     }
+//     return result;
+ 
+// }
+// console.log(palindrome([123,323,421,121]));
+isPalindrome([123,323,421,121])
