@@ -1,7 +1,20 @@
-function solve(){
+function solve(phonebook){
 
-    let person = ''
+    let personInfo = {};
+
+    for ( let person of phonebook){
+        [name, number] = person.split(' ');
+
+        console.log(`${name} -> ${number}`);
+        
+        //personInfo[number] = number;
+
+    }
+    
+    
+
+    
 
 
 }
-solve();
+solve(["Peter 0888 657 212", "Bob 0899 657 212", "Peter 123123"] );
