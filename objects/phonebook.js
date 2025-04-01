@@ -3,18 +3,20 @@ function solve(phonebook){
     let personInfo = {};
 
     for ( let person of phonebook){
-        [name, number] = person.split(' ');
+        [name, num1] = person.split(' ');
 
-        console.log(`${name} -> ${number}`);
+        if ( Object.hasOwnProperty()){
+            personInfo[name] = name;
+        }
         
-        //personInfo[number] = number;
-
+        console.log(`${name} -> ${num1}`);
     }
-    
+
+    //console.log(`${name} -> ${number}`);
     
 
     
 
 
 }
-solve(["Peter 0888 657 212", "Bob 0899 657 212", "Peter 123123"] );
+solve(["Peter 0888657212", "Bob 0899657212", "Peter 123123"] );
