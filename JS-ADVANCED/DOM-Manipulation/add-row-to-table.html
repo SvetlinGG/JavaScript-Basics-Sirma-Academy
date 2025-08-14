@@ -21,9 +21,11 @@
 <script>
     function insertRow(){
         let row = document.getElementById('sampleTable');
-        let newRow = row.insertRow('td');
-        let cell1 = row.insertCell('td');
-        let cell2 = row.insertCell('td');
+        let newRow = row.insertRow();
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        cell1.innerHTML = "John Doe";
+        cell2.innerHTML = "25";
         
     }
 </script>
