@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 150px;
+    border: 1px solid red;
+    padding: 10px;
+    gap: 10px;
+}
+
+.login {
+    border-radius: 5px;
+    height: 20px;
+    border: 2px solid green;
+}
