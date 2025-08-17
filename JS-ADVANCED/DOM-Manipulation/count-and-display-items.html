@@ -19,4 +19,17 @@
     <input type="button" onclick="getOptions()" value="Count and Output all items">
   </form>
 </body>
+<script>
+    function getOptions(){
+        
+        const items = document.querySelectorAll('#mySelect option');
+        const count = items.length;
+        console.log("Total options: " + count);
+
+        items.forEach((el, index) => {
+            console.log((index+1) + ". " + el.textContent);
+        });
+        }
+    
+</script>
 </html>
