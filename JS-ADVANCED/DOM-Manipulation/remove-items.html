@@ -17,8 +17,9 @@
 </body>
 <script>
     function removecolor(){
-        let color = document.getElementById('colorSelect');
-        color.opt === 0;
+      const select = document.querySelector('#colorSelect option');
+      select.remove()
+        
     }
 </script>
 </html>
