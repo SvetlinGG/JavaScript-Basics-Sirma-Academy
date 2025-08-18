@@ -22,13 +22,14 @@
 <script>
     function getOptions(){
         
-        const items = document.querySelectorAll('#mySelect option');
-        const count = items.length;
-        console.log("Total options: " + count);
+        const items = document.getElementById('mySelect');
+        items.addEventListener('change', function() {
+        console.log("You selected: " + items.value);
+      });
 
-        items.forEach((el, index) => {
-            console.log((index+1) + ". " + el.textContent);
-        });
+        // items.forEach((el, index) => {
+        //     console.log((index+1) + ". " + el.textContent);
+        // });
         }
     
 </script>
