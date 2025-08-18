@@ -13,7 +13,7 @@
             <li>The DOM</li>
             <li>Callbacks</li>
         </ul>
-        <input type="text" value="">
+        <input type="text" value="...">
         <button type="button" onclick="createElement()">Create New</button>
       <div>
       
@@ -25,7 +25,10 @@
         
 
         let word = document.createElement('li');
-        word.textContent = input.value || 'Svetlin';
+        word.textContent = input.value ;
+        list.appendChild(word);
+
+        input.value = '';
     }
 </script>
 </html>
