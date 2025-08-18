@@ -9,6 +9,9 @@
     <div id="list-app">
         <p>Click on the item to change the text, or click on the button to create a new item.</p>
         <ul id="items">
+            <li>Map, filter, reduce</li>
+            <li>The DOM</li>
+            <li>Callbacks</li>
         </ul>
         <input type="text" value="">
         <button type="button" onclick="createElement()">Create New</button>
@@ -17,9 +20,12 @@
 </body>
 <script>
     function createElement(){
-        let list = document.getElementById('list-app');
+        let list = document.getElementById('items');
+        let input = document.querySelector('input');
         
-        
+
+        let word = document.createElement('li');
+        word.textContent = input.value || 'Svetlin';
     }
 </script>
 </html>
