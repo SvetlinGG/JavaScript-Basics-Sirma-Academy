@@ -9,7 +9,7 @@
     <h3>Input radius value and get the volume of a sphere.</h3>
     <div>
         <p>Radius</p>
-        <input id="radius" type="text" placeholder="">
+        <input id="radius" type="number" placeholder="" />
     </div>
     <div>
         <p>Volume</p>
@@ -20,7 +20,14 @@
 </body>
 <script>
     function toCalculate(){
-        let radius = document.getElementById('radius');
+        let radiusInput = document.getElementById('radius');
+        let volume = document.getElementById('volume');
+        //let value = volume.getAttribute('placeholder')
+        let radius = parseFloat(radiusInput.value);
+        let result = 2 * radius * Math.PI;
+        volume.value = result.toFixed(4)
+        //console.log(value.toFixed(4));
+        
         
     }
 </script>
